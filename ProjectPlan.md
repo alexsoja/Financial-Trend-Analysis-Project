@@ -23,20 +23,39 @@ Responsibilities:
 ## Datasets:
 This project will use two trustworthy and open datasets with different formats and access methods:
 
-Stock Market Data (via Yahoo Finance / yfinance API):
-- Access Method: Python API (no authentication required)
-- Content: Historical daily data for the S&P 500 and selected individual stocks (e.g., AAPL, MSFT, GOOGL) including open, close, high, low, and volume.
-- Format: Retrieved via JSON and loaded into Pandas DataFrames or SQL tables.
-- Source: Yahoo Finance (via open yfinance library)
+### **1. Stock Market Data (via Yahoo Finance / yfinance API)**
 
-Macroeconomic Indicators (via FRED API):
-- Access Method: REST API (requires free API key)
-- Content: Quarterly or monthly data on GDP growth, Consumer Price Index (CPI), and unemployment rate.
-- Format: JSON/CSV (depending on request format)
-- Source: Federal Reserve Economic Data (FRED)
+**Access Method:** Python API (`yfinance`), no authentication required  
+**Content:** Historical daily data for the S&P 500 and selected individual stocks (e.g., AAPL, MSFT, GOOGL), including open, close, high, low, and volume.  
+**Format:** Retrieved in JSON and loaded into Pandas DataFrames or SQL tables.  
+**Source:** Yahoo Finance (via open `yfinance` library)
 
-Integration Strategy:  
-Datasets will be joined on time (date) and region (U.S.) to align stock and economic data for correlation analysis.
+**License / Terms of Use:**  
+- `yfinance` is distributed under the **Apache License 2.0**.  
+- Data is provided by **Yahoo Finance** for **personal and non-commercial use** only.  
+- Redistribution or commercial use must comply with [Yahoo’s Terms of Service](https://legal.yahoo.com/us/en/yahoo/terms/otos/index.html).  
+- Required attribution:  
+  > “Data obtained via Yahoo Finance (https://finance.yahoo.com/) using the yfinance library.”
+
+### **2. Macroeconomic Indicators (via FRED API)**
+
+**Access Method:** REST API (`fredapi`), requires free API key  
+**Content:** Quarterly or monthly data on GDP growth, Consumer Price Index (CPI), and unemployment rate.  
+**Format:** JSON or CSV (depending on request format).  
+**Source:** Federal Reserve Economic Data (FRED), maintained by the Federal Reserve Bank of St. Louis.
+
+**License / Terms of Use:**  
+- FRED data is in the **public domain** and free for research and educational use.  
+- Redistribution is allowed with citation, but not for resale.  
+- Required attribution:  
+  > “Source: Federal Reserve Bank of St. Louis, FRED (https://fred.stlouisfed.org/).”  
+- [FRED Terms of Use](https://fred.stlouisfed.org/legal)
+
+### **Integration Strategy**
+
+Datasets will be joined on **time (date)** and **region (U.S.)** to align stock and economic indicators for correlation and trend analysis.  
+
+Derived datasets will inherit the **most restrictive license** among sources (Yahoo Finance’s non-commercial clause). The integrated dataset and outputs will therefore be released under a **CC BY-NC 4.0** (Attribution–NonCommercial) license with proper attribution to Yahoo Finance and FRED.
 
 ## Timeline: 
 1. Create GitHub repo & ProjectPlan.md	-	(Initial plan & tag release)
