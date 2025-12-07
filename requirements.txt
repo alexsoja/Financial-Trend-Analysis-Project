@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+seaborn
+statsmodels
+yfinance
+fredapi
+requests
+snakemake
+python-dateutil
+scipy

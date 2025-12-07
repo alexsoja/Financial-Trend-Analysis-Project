@@ -1,0 +1,42 @@
+# -----------------------------------
+# DATA FILES — DO NOT COMMIT
+# -----------------------------------
+data/raw/
+data/clean/
+
+# -----------------------------------
+# GENERATED OUTPUTS
+# -----------------------------------
+figures/
+results/
+
+# -----------------------------------
+# NOTEBOOK CHECKPOINTS
+# -----------------------------------
+**/.ipynb_checkpoints/
+
+# -----------------------------------
+# SNAKEMAKE TEMPORARY FILES
+# -----------------------------------
+.snakemake/
+*.snakemake
+
+# -----------------------------------
+# PYTHON & ENVIRONMENT FILES
+# -----------------------------------
+__pycache__/
+*.pyc
+*.pyo
+
+# Conda environment directories
+env/
+venv/
+.snakeenv/
+.snakemake-env/
+
+# MacOS system files
+.DS_Store
+
+# Logs
+logs/
+*.log
