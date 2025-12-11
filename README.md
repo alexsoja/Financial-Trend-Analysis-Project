@@ -156,8 +156,8 @@ cd Financial-Trend-Analysis-Project
 ```
 ### **2. Download data from Box
 
-Raw datasets must be downloaded from Box:
-📦 Box Folder: https://uofi.box.com/s/4xmit6ij0q0y0alz2ze2iy651vb5h9nh
+Raw datasets must be downloaded from Box Here:
+[https://uofi.box.com/s/4xmit6ij0q0y0alz2ze2iy651vb5h9nh](https://uofi.box.com/s/4xmit6ij0q0y0alz2ze2iy651vb5h9nh)
 
 Place all downloaded CSV files into:
 
